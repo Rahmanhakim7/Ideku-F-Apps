@@ -8,7 +8,7 @@
   ],
   "outputDirectory": "./",
   "routes": [
-    { "src": "/(style.css|script.js|img/(.*))", "dest": "/public/$1" },
+    { "src": "/(style.css|script.js|img", "dest": "/public/$1" },
     { "src": "/", "dest": "/index.html" }
   ]
 }
