@@ -8,10 +8,10 @@
   ],
   "outputDirectory": "./",
   "routes": [
-    { "src": "/about", "dest": "/index.html" },
-    { "src": "/#product", "dest": "/index.html" },
-    { "src": "/#gallery", "dest": "/index.html" },
-    { "src": "/#contact", "dest": "/index.html" },
-    { "src": "/#", "dest": "/index.html" }
+    { "src": "/about", "dest": "/about" },
+    { "src": "/#product", "dest": "/product" },
+    { "src": "/#gallery", "dest": "/gallery" },
+    { "src": "/#contact", "dest": "/contact" },
+    { "src": "/", "dest": "/index.html" }
   ]
 }
