@@ -8,8 +8,8 @@
   ],
   "outputDirectory": "./",
   "routes": [
-    { "src": "/about", "dest": "/about" },
-    { "src": "/#product", "dest": "/product" },
+    { "src": "/index.html/about", "dest": "/about" },
+    { "src": "/product", "dest": "/product" },
     { "src": "/#gallery", "dest": "/gallery" },
     { "src": "/#contact", "dest": "/contact" },
     { "src": "/", "dest": "/index.html" }
