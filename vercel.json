@@ -1,21 +1,17 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "index.html",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      { "handle": "filesystem" },
-      {
-        "src": "/css/(.*)",
-        "dest": "/public/css/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "outputDirectory": "./",
+  "routes": [
+    { "src": "/about", "dest": "/index.html" },
+    { "src": "/#product", "dest": "/index.html" },
+    { "src": "/#gallery", "dest": "/index.html" },
+    { "src": "/#contact", "dest": "/index.html" },
+    { "src": "/#", "dest": "/index.html" }
+  ]
+}
