@@ -44,3 +44,18 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.content .cta').style.opacity = '1';
   }, 2000);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var galleryContainer = document.querySelector('.container-galleryy');
+  var galleryOffset = galleryContainer.offsetTop - window.innerHeight + 100; // Menambahkan margin 100px
+
+  function checkGallery() {
+    if (window.scrollY > galleryOffset) {
+      galleryContainer.classList.add('show');
+    } else {
+      galleryContainer.classList.remove('show'); // Menghapus kelas 'show' ketika scroll ke atas
+    }
+  }
+
+  window.addEventListener('scroll', checkGallery);
+});

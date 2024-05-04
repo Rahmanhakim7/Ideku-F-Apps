@@ -146,7 +146,6 @@ body {
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
-
 @keyframes fadeInFromBottom {
   0% {
     transform: translateY(100%);
@@ -158,14 +157,13 @@ body {
   }
 }
 
-.content h1,
-.content h2,
-.content p,
-.content .cta {
+.hero .content h1,
+.hero .content h2,
+.hero .content p,
+.hero .content .cta {
   animation: fadeInFromBottom 2s ease-out forwards;
   opacity: 0;
 }
-
 
 /* About Section */
 .about,
@@ -253,7 +251,7 @@ body {
 }
 
 .about-img .visible {
-  animation: slideInFromLeft 3s ease-out forwards;
+  animation: slideInFromLeft 4s ease-out forwards;
 }
 
 @keyframes slideInFromBottom {
@@ -342,6 +340,31 @@ body {
 }
 
 /* Gallery Section */
+.container-galleryy {
+  opacity: 0; /* Atur opacity menjadi 0 agar awalnya tidak terlihat */
+  transform: translateY(50px); /* Geser konten ke bawah 50px */
+  transition: opacity 4s, transform 4s; /* Atur transisi untuk opacity dan transform */
+}
+
+.container-galleryy.show {
+  opacity: 1; /* Set opacity menjadi 1 saat class 'show' ditambahkan */
+  transform: translateY(0); /* Kembalikan posisi konten ke posisi awal */
+}
+
+/* Animasi keyframes untuk muncul dari bawah ke atas */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 .Galleryy {
   padding: 7% 1.4rem;
 }
